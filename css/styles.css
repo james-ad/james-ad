@@ -1,0 +1,180 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  transition: ease-in-out 0.3s;
+}
+
+html,
+body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.about-me-heading {
+  animation: 3s ease-in-out;
+  text-align: center;
+  font-size: 15vmax;
+  letter-spacing: 20px;
+  margin: 0px 10px;
+  position: absolute;
+  width: 99%;
+  top: 200px;
+  z-index: -1;
+}
+
+.about-me-paragraph {
+  margin: 50px 75px 0px;
+  font-size: 1.3rem;
+}
+
+.additional-links {
+  text-align: center;
+  margin-top: 100px;
+  width: 98%;
+}
+
+.contact-paragraph {
+  font-size: 1.2em;
+  margin-top: 40px;
+}
+
+.links-list-item {
+  margin: 5px;
+  font-size: 1.2rem;
+}
+
+.main-navigation {
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  justify-items: center;
+  padding-top: 25px;
+  font-size: 3em;
+  text-align: center;
+  grid-gap: 40px;
+  position: sticky;
+  margin: 20px 10px 50px;
+}
+
+.nav-option {
+  grid-column: minmax(100px, 1fr);
+  color: black;
+}
+
+.main-photo {
+  max-width: 350px;
+  border: 2px solid black;
+  border-radius: 75%;
+  box-shadow: rgb(158, 158, 165) 1px 5px 10px;
+}
+
+.portfolio-header {
+  text-align: center;
+  font-size: 15vmin;
+  color: rgb(158, 165, 185, 0.3);
+  margin-bottom: 0;
+}
+
+.portfolio-section {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-gap: 25px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+}
+.portfolio-image {
+  width: 100%;
+}
+
+.section {
+  margin: 130px 0px 0px;
+}
+
+.section1 {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+.section2 {
+  display: grid;
+  grid-template-columns: repeat(auto, auto-fit, minmax(300px, 1fr));
+  color: rgb(32, 28, 28);
+}
+
+.section3 {
+  text-align: center;
+  margin: 0px 0px 50px;
+  padding: 20px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1 / -1;
+  grid-template-rows: minmax(100px, 250px) repeat(autofit, 1fr);
+  overflow: hidden;
+  min-width: 200px;
+}
+
+@media (max-width: 642px) {
+  .about-me-heading {
+    top: 350px;
+  }
+  .main-navigation {
+    margin-bottom: 10px;
+  }
+  .main-photo {
+    max-width: 250px;
+    margin-top: 20px;
+  }
+
+  .option3 {
+    grid-column: 1 / -1;
+  }
+
+  .portfolio-section {
+    align-items: start;
+  }
+}
+@media (max-width: 407px) {
+  .about-me-heading {
+    display: none;
+  }
+  .about-me-paragraph {
+    margin: 0px 30px;
+  }
+
+  .main-navigation {
+    grid-gap: 35px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .main-photo {
+    transform: translateY(-50px);
+    margin: 0px 10px;
+  }
+
+  .nav-option {
+    margin: 10px;
+  }
+
+  .portfolio-section {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    text-align: center;
+  }
+  .portfolio-image {
+    width: 100%;
+    float: left;
+    margin: 20px auto;
+  }
+}

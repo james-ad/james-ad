@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>James Dunn, Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/styles.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="main-navigation">
+        <a href="#about-me" class="nav-option option1">
+          <nav>About Me</nav>
+        </a>
+        <a href="#portfolio" class="nav-option option2">
+          <nav>Portfolio</nav>
+        </a>
+        <a href="#contact" class="nav-option option3">
+          <nav>Contact</nav>
+        </a>
+      </header>
+      <section id="about=me" class="section section1">
+        <img
+          src="./images/pictchya.jpg"
+          alt="picture of my big face"
+          class="main-photo"
+        />
+        <h2 class="portfolio-header about-me-heading" id="about-me-heading">
+          ABOUT
+        </h2>
+        <p class="about-me-paragraph">
+          Hi! My name is James, and I'm a Web Developer from Seattle, WA. I do
+          my work utilizing HTML, CSS, and JavaScript. I'm just getting going
+          and am learning more each day. I've built a few apps, and this is my
+          first site. I built this site from scratch using CSS Grid and Flexbox
+          for layout. All of the responsiveness was done using CSS. This process
+          taught me how to rearrange and resize page elements at different
+          breakpoints to provide the best experience at varying screen sizes. In
+          addition to the Holy Trinity of Web Development, I also work with
+          React and Node.js. Scroll down to see some of my work, contact info,
+          and links.
+
+          <br /><br />
+          Outside of coding, I play guitar pretty much daily and I train boxing.
+          I like going camping and hiking throughout the Summer. When I'm not
+          doing any of that stuff, I'm usually with friends or family. Feel free
+          to ask me anything I may have left out.
+        </p>
+      </section>
+      <section id="portfolio" class="section section2">
+        <h2 class="portfolio-header">PORTFOLIO</h2>
+        <section class="portfolio-section">
+          <img
+            src="./images/savings-app-image.PNG"
+            alt="picture of vanilla js savings app"
+            class="portfolio-image"
+          />
+          <section class="portfolio-section-description">
+            <a
+              target="_blank"
+              href="https://james-ad.github.io/savings-calculator/"
+              class="portfolio-app-link"
+            >
+              <h3 class="portfolio-section-heading">
+                Savings Calculator
+              </h3>
+            </a>
+            <p class="portfolio-section-paragraph">
+              This wasn't the first project I built, but it is the first one I
+              put a lot of work into. I made it using HTML, CSS, and plain ol'
+              Vanilla JS. I wanted to make a program that made it easier to
+              figure out how to calculate different percentages of my checks to
+              put into savings. What I learned more than anything from this is
+              the importance of using CSS styling changes to help deliver a
+              better user experience. Inverting the colors on the buttons when
+              the user interacts with it, and experimenting with
+              linear-gradients instead of solid colors are the things that stand
+              out most in my head.
+            </p>
+          </section>
+        </section>
+        <section class="portfolio-section">
+          <img
+            src="./images/checklist-image.PNG"
+            alt="picture of checklist app"
+            class="portfolio-image"
+          />
+          <section class="portfolio-section-description">
+            <a
+              target="_blank"
+              href="https://james-ad.github.io/checklist/"
+              class="portfolio-app-link"
+            >
+              <h3 class="portfolio-section-heading">
+                To-Do List
+              </h3>
+            </a>
+            <p class="portfolio-section-paragraph">
+              This project is still a work in progress, but it's far enough
+              along to merit displaying its base functionality. I built it using
+              HTML, CSS, and Vanilla Javascript, but I plan on building it over
+              again using React. I wanted to build a to-do list app that looked
+              like a demo on the webpage itself. I kind of liked the idea of
+              showing someone how it will look on their phone from a desktop.
+              I'm not sure if I'll continue this trend if I choose to rebuild
+              this program.
+            </p>
+          </section>
+        </section>
+        <section class="portfolio-section">
+          <img
+            src="./images/react-savings-image.PNG"
+            alt="picture of react savings app"
+            class="portfolio-image"
+          />
+          <section class="portfolio-section-description">
+            <a
+              target="_blank"
+              href="https://james-ad.github.io/react-savings-program/"
+              class="portfolio-app-link"
+            >
+              <h3 class="portfolio-section-heading">
+                Savings Calculator (React)
+              </h3>
+            </a>
+            <p class="portfolio-section-paragraph">
+              This is the rebuilt version of my savings calculator. Once I
+              finished the base functionality in the first version of this app
+              using HTML, CSS, and vanilla JavaScript, I decided to rebuild it
+              using React. I learned about the fundamentals of React while
+              building this site, including passing data between components,
+              state management, and dynamic rendering of components.
+            </p>
+          </section>
+        </section>
+      </section>
+      <section id="contact" class="section section3">
+        <h2 class="portfolio-header">CONTACT</h2>
+        <p class="contact-paragraph">
+          If you're interested in speaking with me directly, feel free to drop
+          me a line at <a href="">dunnjames.a@gmail.com</a>.
+        </p>
+        <ul class="additional-links">
+          <h3 class="links-list-heading">Additional Links</h3>
+          <a href="" target="_blank">
+            <li class="links-list-item">GitHub</li>
+          </a>
+          <a href="" target="_blank">
+            <li class="links-list-item">Codepen</li>
+          </a>
+        </ul>
+      </section>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
